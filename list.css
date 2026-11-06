@@ -1,0 +1,119 @@
+
+.header {
+    width: 100%;
+    background-color: #f8bbd0;
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #d81b60;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #fce4ec;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.topnav a:hover {
+    background-color: #f48fb1;
+    color: #ffffff;
+}
+
+h2 {
+    background-color: rgb(232, 173, 192);
+    color: rgb(158, 18, 114);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h1 {
+    background-color: rgb(146, 210, 233);
+    color: rgb(135, 15, 141);
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+body{
+    background-image: url(CHELSEA_CHELSEA_BACKGROUND_FIX_ketiga.png);
+    background-size: cover;
+    background-position: center;
+    font-family:cursive;
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    background-color: #fff0f3; 
+    color: #4a4a4a;
+}
+
+h4 {
+    color: #ad1457;
+    border-bottom: 2px solid #f8bbd0;
+    padding-bottom: 6px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+
+.buah, .lorem, .icon {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(244, 143, 177, 0.2);
+    margin-bottom: 20px;
+    border-left: 6px solid #f48fb1;
+}
+
+ol, ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    padding: 5px 0;
+    color: #616161;
+    font-size: 14px;
+}
+
+li:hover {
+    color: #d81b60;
+}
+
+
+.icon i {
+    color: #ec407a;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #f8bbd0;
+    color: #880e4f;
+    border-radius: 8px;
+    font-weight: 600;
+}

@@ -1,0 +1,340 @@
+
+.header {
+    width: 100%;
+    background-color: #f8bbd0;
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #d81b60;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #fce4ec;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.topnav a:hover {
+    background-color: #f48fb1;
+    color: #ffffff;
+}
+
+/* JUDUL & SUBJUDUL */
+h2 {
+    background-color: rgb(232, 173, 192);
+    color: rgb(158, 18, 114);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h1 {
+    background-color: rgb(146, 210, 233);
+    color: rgb(135, 15, 141);
+    text-align: center;
+    padding: 15px;
+}
+
+.footer{
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+body{
+    background-image: url(CHELSEA_CHELSEA_BACKGROUND_FIX_ketiga.png);
+    background-size: cover;
+    background-position: center;
+    font-family:cursive;
+}
+
+h2{
+    background-color: rgb(232, 173, 192);
+    color: rgb(158, 18, 114);
+    text-align: center;
+    
+}
+
+h1{
+    background-color:rgb(146, 210, 233);
+    color: rgb(135, 15, 141);
+    text-align: center;
+    @font-face {
+        font-family:;
+        src: url();
+    }
+
+
+    
+}
+
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgb(244, 153, 206);
+    color: rgb(70, 4, 52);
+    padding: 30px;
+    border-radius: 12px;
+    font-family: cursive;
+}
+
+div.content{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    border: 3px solid rgb(255, 0, 200);
+}
+
+div.foto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.Favorite-Food{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.favorite-card{
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    padding: 15px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.favorite-card img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.25 ease;
+    display: block;
+}
+
+
+
+.favorite-card:hover img{
+    transform: scale(1.05);
+}
+.favorite-card:hover{
+      transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2)
+}
+
+.favorite-card:active{
+    transform: scale(0.95);
+}
+
+.favorite-card h3{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.song-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.song-section h2 {
+    margin-bottom: 30px;
+}
+
+.songs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    color: rgb(0, 0, 0);
+ 
+}
+
+.songs mark {
+    background-color: rgb(247, 174, 217);
+}
+
+
+
+.song {
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.vinyl {
+    width: 200x;
+    height: 200px;
+    background: #111;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+   
+}
+
+.vinyl img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.song:hover {
+    transform: translateY(-8px);
+}
+
+.song:hover .vinyl {
+    animation: spin 3s linear infinite;
+    filter: drop-shadow( 0 8px 10px rgba(0, 0, 0, 0.3) );
+    }
+
+    @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.song audio {
+    width: 150px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+.film-item {
+    width: 200px;
+    text-align: center;
+}
+
+.film-pic{
+   position: relative;
+    width: 200px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    border: 3px solid rgb(0, 191, 255);
+}
+
+.film-pic img {
+   position: absolute;
+   top: 0;
+   left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.film-normal {
+    opacity: 1;
+    z-index: 2;
+}
+
+.film-hover  {
+    opacity: 0;
+    z-index: 1;
+}
+
+.film-pic:hover .film-normal {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.film-pic:hover .film-hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.film-item p {
+    margin-top: 12px;
+}
+
+
+

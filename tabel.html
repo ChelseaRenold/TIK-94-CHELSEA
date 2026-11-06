@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LAYOUT HTML DAN CSS</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      <div class="header">
+            <h1>HEADER</h1>
+        </div>
+        
+
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="tabel.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="STS_TIK_94_09.html">STS</a>
+        </div>
+<!-- Membuat Table Nilai -->
+ <h2>Table Nilai Siswa</h2>
+ <!-- colspan : menggabungkan kolom
+        rowspan : menggabungkan baris -->
+ <table>
+<tr>
+    <th rowspan="2">No</th>
+    <th rowspan="2">Nama</th>
+    <th rowspan="2">Mata Pelajaran</th>
+    <th colspan="2">Nilai</th>
+</tr>
+<tr>
+    <th>Ulangan 1</th>
+    <th>Ulangan 2</th>
+</tr>
+<tr>
+    <th>26</th>
+    <th>Tara</th>
+    <th>Matematika</th>
+    <th>95</th>
+    <td>90</td>
+</tr>
+<tr>
+    <th>10</th>
+    <th>Jessica</th>
+    <th>Inggris</th>
+    <th>100</th>
+    <td>100</td>
+</tr>
+<tr>
+    <th>7</th>
+    <th>Sophie</th>
+    <th>IPS</th>
+    <th>89</th>
+    <td>93</td>
+</tr>
+<tr>
+    <th>22</th>
+    <th>Mary </th>
+    <th>Penjas</th>
+    <th>80</th>
+    <td>92</td>
+</tr>
+<tr>
+    <th>12</th>
+    <th>Josephine</th>
+    <th>PPKN</th>
+    <th>94</th>
+    <td>90</td>
+</tr>
+
+
+
+ </table>
+
+ <h2>Table Merge</h2>
+
+<table class="table-merge">
+    <colgroup>
+        <col style="width:12.6%">
+        <col style="width:13.3%">
+        <col style="width:12.6%">
+        <col style="width:12.6%">
+        <col style="width:13.1%">
+        <col style="width:7.6%">
+        <col style="width:7.8%">
+        <col style="width:13.1%">
+        <col style="width:7.3%">
+    </colgroup>
+
+    <tr>
+        <td rowspan="3">1</td>
+        <td colspan="2">2</td>
+        <td colspan="2">3</td>
+        <td rowspan="4">4</td>
+        <td rowspan="4">5</td>
+        <td rowspan="2">6</td>
+        <td rowspan="6">7</td>
+    </tr>
+
+    <tr>
+        <td>8</td>
+        <td>9</td>
+        <td colspan="2">10</td>
+    </tr>
+
+    <tr>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td rowspan="3">15</td>
+    </tr>
+
+    <tr>
+        <td colspan="5">16</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">17</td>
+        <td colspan="2">18</td>
+        <td rowspan="2">19</td>
+        <td colspan="3">20</td>
+    </tr>
+
+    <tr>
+        <td>21</td>
+        <td>22</td>
+        <td colspan="4">23</td>
+    </tr>
+
+</table>
+ <div class="footer">
+        <p>Chelsea- 94 - 9</p>
+        
+    </div>
+  </body>
+</html>

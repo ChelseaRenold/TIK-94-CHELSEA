@@ -1,0 +1,40 @@
+.table-merge {
+    width: 480px;
+    height: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: blue;
+}
+
+.table-merge td {
+    border: 6px solid red;
+    background-color: blue;
+    color: yellow;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 35px;
+    font-family: Georgia, serif;
+    padding: 5px;
+}
+
+
+.table-merge tr:nth-child(2) td,
+.table-merge tr:nth-child(4) td,
+.table-merge tr:nth-child(6) td {
+    background-color: cyan;
+}
+
+
+.table-merge td:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer{
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+}
