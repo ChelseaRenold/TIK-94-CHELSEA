@@ -1,0 +1,496 @@
+body{
+    background-image:url(BACKGROUND_STS_TIK_2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face{
+    font-family:"Hello Valentina";
+    src: url(Hello\ Valentina.ttf);
+}
+@font-face{
+    font-family:"Butterpop";
+    src: url(Butterpop.ttf);
+}
+
+@font-face{
+    font-family:"Sunny Spells";
+    src: url(Sunny\ Spells.ttf);
+}
+
+@font-face{
+    font-family:"Papernotes";
+    src: url(Papernotes.ttf);
+}
+
+@font-face{
+    font-family:"Hello Autumn";
+    src: url(Hello\ Autumn.ttf);
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+
+}
+
+.main-title h1{
+    font-family:"Hello Valentina";
+    font-size: 60px;
+    padding-top: 130px;
+    margin: 0;
+    color: white;
+    text-shadow:4px 4px 6px rgba(0, 0, 0, 0.35);
+    transition: 0.3s;
+}
+
+.main-title h1:hover{
+    color: rgb(238, 244, 153);
+    font-size: 68px;
+}
+
+
+.main-title{
+     text-align: center;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+}
+
+.hero-card{
+    width: 650px;
+    box-sizing: border-box;
+    background-color: rgb(155, 204, 244);
+    color: rgb(70,4,52);
+    padding: 25px;
+    border-radius: 12px;
+   font-family:"Butterpop";
+   transition: 0.3s;
+   box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3);
+}
+.hero-card mark{
+    background-color: rgb(217, 251, 255);
+    color: rgb(70, 4, 52);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.hero-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 17px rgba(0, 0, 0, 0.35);
+}
+
+
+
+.navbar{
+    position: absolute;
+    top: 25px;
+    left: 5%;
+    right: 5%;
+    height: 55px;
+
+    background-color: rgb(197, 224, 153);
+    border: 3px solid white;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.logo{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(70,4,52);
+}
+
+.nav-links{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(70,4,52);
+    font-family: cursive;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    color: rgb(70,4,52);
+}
+
+.about{
+    padding: 40px 5%;
+}
+
+
+.about h2{
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Sunny Spells";
+    font-size: 45px;
+    color: rgb(247, 26, 144);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px auto 0;
+    padding: 40px;
+    width: 900px;
+    background-color: rgb(224,153,206);
+    border: 3px solid white;
+    border-radius: 25px;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.about-text{
+    width: 500px;
+    font-family:"Butterpop";
+    color: rgb(70, 4, 52);
+    text-align: center;
+}
+
+.about-text h3{
+    font-family:"Butterpop";
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-text p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.6;
+
+}
+
+.about-text mark{
+    background-color: rgb(255,235,150);
+    color: rgb(70, 4, 52);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.about-image img{
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.about-image img:hover{
+    transform: scale(1.07);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+.tips {
+   padding: 0 8% 40px;
+    text-align: center;
+    font-family: "Sunny Spells";
+    font-size: 20px;
+}
+
+.tips h2 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.tips-intro {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.6;
+}
+
+.tips-container {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tip {
+    display: none;
+    background-color: rgb(233, 244, 153);
+    border: 3px solid white;
+    border-radius: 25px;
+    padding: 30px 45px;
+    min-height: 500px;
+    box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.25);
+}
+
+.tip:target {
+    display: block;
+    animation: slideIn 0.5s ease;
+}
+
+.tips-container:not(:has(.tip:target)) #tip1 {
+    display: block;
+}
+
+.tip-number {
+    width: 55px;
+    margin: 0 auto 10px;
+    padding: 8px 0;
+    background-color: white;
+    border-radius: 50px;
+    color: rgb(70, 4, 52);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tip h3 {
+    color: rgb(70, 4, 52);
+    font-size: 30px;
+    margin: 10px 0 20px;
+}
+
+.tip img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid white;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.tip img:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.tip p {
+    margin-top: 20px;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.6;
+    color: rgb(70, 4, 52);
+}
+
+.slide-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.slide-buttons a {
+    text-decoration: none;
+    background-color: white;
+    color: rgb(55, 4, 70);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.slide-buttons a:hover {
+    background-color: rgb(70, 4, 52);
+    color: white;
+    transform: scale(1.08);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.mistakes {
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.mistakes h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Hello Autumn";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mistakes-intro {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    padding: 12px 18px;
+    background-color: rgb(224, 153, 206);
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.5;
+    font-family: "Papernotes";
+    font-size: 16px;
+}
+
+.mistakes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.mistake-card {
+    width: 190px;
+    min-height: 170px;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: rgb(155, 204, 244);
+    border: 2px solid white;
+    border-radius: 16px;
+    color: rgb(70, 4, 52);
+    font-family: "Papernotes";
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.mistake-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.mistake-number {
+    width: 35px;
+    margin: 0 auto 8px;
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 50px;
+    color: rgb(70, 4, 52);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mistake-card h3 {
+    font-size: 19px;
+    margin: 6px 0 8px;
+}
+
+.mistake-card p {
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+
+.game {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.game h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Hello Autumn";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.game-intro {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    padding: 12px 18px;
+    background-color: rgb(224, 153, 206);
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.5;
+    font-family: "Papernotes";
+    font-size: 16px;
+}
+
+.game-card {
+    width: 650px;
+    max-width: 90%;
+    margin: auto;
+    padding: 25px;
+    background-color: rgb(155, 204, 244);
+    border: 3px solid white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.question {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 18px;
+    text-align: left;
+}
+
+.question h3 {
+    margin-top: 0;
+    color: rgb(70, 4, 52);
+    font-family: "Papernotes";
+    font-size: 18px;
+}
+
+.question input {
+    display: none;
+}
+
+.question label {
+    display: block;
+    padding: 10px 15px;
+    margin: 8px 0;
+    background-color: rgb(244, 153, 206);
+    border-radius: 12px;
+    font-family: "Papernotes";
+    color: rgb(70, 4, 52);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.question label:hover {
+    transform: translateX(5px);
+}
+
+.question input:checked + label {
+    background-color: rgb(224, 153, 206);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.correct {
+    display: none;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: rgb(197, 224, 153);
+    border-radius: 12px;
+    font-family: "Papernotes";
+    color: rgb(70, 4, 52);
+}
+
+#q1b:checked ~ .correct,
+#q2b:checked ~ .correct,
+#q3c:checked ~ .correct {
+    display: block;
+}
+
